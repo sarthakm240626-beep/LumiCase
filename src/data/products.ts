@@ -1,0 +1,395 @@
+import { Product, PhoneModelOption, Review } from '../types';
+
+import heroImg from '../assets/images/hero_butterfly_case_1790836123777.jpg';
+import blossomImg from '../assets/images/case_pink_blossom_1790836140050.jpg';
+import bowImg from '../assets/images/case_crystal_bow_1790836153583.jpg';
+import mirrorImg from '../assets/images/case_mirror_glam_1790836164355.jpg';
+import lavenderImg from '../assets/images/case_lavender_bloom_1790836175336.jpg';
+import flatlayImg from '../assets/images/lumicase_flatlay_1790836190418.jpg';
+import selfieImg from '../assets/images/lumicase_selfie_1790836202822.jpg';
+
+export const PHONE_MODELS: PhoneModelOption[] = [
+  // Samsung
+  { brand: 'Samsung', model: 'Samsung Galaxy A37 5G' },
+  { brand: 'Samsung', model: 'Samsung Galaxy A57 5G' },
+  { brand: 'Samsung', model: 'Samsung Galaxy S25 Ultra' },
+  { brand: 'Samsung', model: 'Samsung Galaxy S25' },
+  { brand: 'Samsung', model: 'Samsung Galaxy S24 Ultra' },
+  { brand: 'Samsung', model: 'Samsung Galaxy S24' },
+  // Apple
+  { brand: 'Apple', model: 'iPhone 17 Pro Max' },
+  { brand: 'Apple', model: 'iPhone 17 Pro' },
+  { brand: 'Apple', model: 'iPhone 17' },
+  { brand: 'Apple', model: 'iPhone 16 Pro Max' },
+  { brand: 'Apple', model: 'iPhone 16 Pro' },
+  { brand: 'Apple', model: 'iPhone 16' },
+  { brand: 'Apple', model: 'iPhone 15 Pro Max' },
+  { brand: 'Apple', model: 'iPhone 15' },
+  // OnePlus
+  { brand: 'OnePlus', model: 'OnePlus 13' },
+  { brand: 'OnePlus', model: 'OnePlus 12R' },
+  { brand: 'OnePlus', model: 'OnePlus Nord 4' },
+];
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'butterfly-dreams',
+    name: 'Butterfly Dreams Case',
+    tagline: '3D iridescent wings with floating holographic starlight glitter.',
+    category: 'Butterfly',
+    price: 349,
+    originalPrice: 1299,
+    discountPercent: 73,
+    rating: 4.9,
+    reviewCount: 896,
+    images: [heroImg, selfieImg, flatlayImg],
+    badge: 'BEST SELLER',
+    isBestSeller: true,
+    isNewArrival: false,
+    description: 'Turn heads everywhere you go. Hand-crafted with embedded 3D resin butterfly embellishments, delicate silver micro-glitter, and a crystal-clear shock-absorbing TPU bumper that shields against drops without yellowing.',
+    features: [
+      '10ft certified drop protection with Air-Cushion corners',
+      'Raised 1.5mm bezel to protect screen and camera lenses',
+      'Anti-yellowing UV-resistant German Bayer resin',
+      'Tactile metallic-feel buttons with precise click response',
+      'Fully wireless charging and NFC payment compatible'
+    ],
+    materials: 'High-grade Flexible Bayer TPU + Scratch-proof Acrylic Backplate',
+    inStock: true,
+  },
+  {
+    id: 'pink-blossom',
+    name: 'Pink Blossom Charm Case',
+    tagline: 'Sculpted 3D petal florals with detachable pearl beaded charm strap.',
+    category: 'Floral',
+    price: 399,
+    originalPrice: 1199,
+    discountPercent: 67,
+    rating: 4.8,
+    reviewCount: 592,
+    images: [blossomImg, flatlayImg, selfieImg],
+    badge: 'TRENDING',
+    isBestSeller: true,
+    isNewArrival: false,
+    charmIncluded: true,
+    description: 'A tactile bouquet in the palm of your hand. Features sculpted textured pink petals and includes our signature handcrafted iridescent pearl and heart wristlet chain so you never drop your phone while snapping photos.',
+    features: [
+      'Includes detachable luxury hand-beaded pearl charm wristlet',
+      'Textured oil-resistant 3D floral art finish that never peels',
+      'Shock-absorbing cushioned silicone bumper edges',
+      'Ultra-precise laser cutouts for ports, speakers & mic',
+      'Ergonomic soft-grip finish preventing slips'
+    ],
+    materials: 'Eco-conscious Soft TPU with Beaded Acrylic Pearl Wristlet',
+    inStock: true,
+  },
+  {
+    id: 'crystal-bow',
+    name: 'Crystal Bow Sparkle Case',
+    tagline: 'Fine lilac glitter frost with diamond-cut rhinestone bow motifs.',
+    category: 'Cute & Bow',
+    price: 349,
+    originalPrice: 1299,
+    discountPercent: 73,
+    rating: 4.9,
+    reviewCount: 435,
+    images: [bowImg, heroImg, selfieImg],
+    badge: 'LIMITED EDITION',
+    isBestSeller: true,
+    isNewArrival: true,
+    description: 'Elegance meets playfulness. A deep lavender glitter canvas adorned with hand-placed pave rhinestone ribbon bow accents that sparkle dazzlingly under any lighting.',
+    features: [
+      'Genuine pave rhinestone crystal ribbons anchored securely',
+      'Dual-layer composite defense against scratches and impacts',
+      'Silky smooth anti-fingerprint glitter topcoat',
+      'Reinforced camera island frame with metallic accent',
+      'Pocket-friendly slim profile'
+    ],
+    materials: 'Reinforced Polycarbonate Shell with Pavé Rhinestone Accents',
+    inStock: true,
+  },
+  {
+    id: 'mirror-glam',
+    name: 'Mirror Glam Vanity Case',
+    tagline: 'Blush pink finish with integrated crystal flower vanity mirror.',
+    category: 'Luxury',
+    price: 499,
+    originalPrice: 1499,
+    discountPercent: 67,
+    rating: 4.9,
+    reviewCount: 312,
+    images: [mirrorImg, flatlayImg, blossomImg],
+    badge: 'BEST SELLER',
+    isBestSeller: true,
+    isNewArrival: false,
+    description: 'Check your makeup and touch up your lip gloss anytime. Features a real high-definition distortion-free compact mirror rimmed with delicate crystal flowers and rose gold electroplating.',
+    features: [
+      'Distortion-free HD acrylic crystal vanity mirror built-in',
+      'Rose gold electroplated frame resistant to fading and tarnish',
+      '360° full perimeter camera guard with raised lip',
+      'Doubles as a convenient ergonomic phone finger rest',
+      'Soft microfiber interior lining prevents phone scratches'
+    ],
+    materials: 'Electroplated Soft Silicone with HD Acrylic Mirror Accent',
+    inStock: true,
+  },
+  {
+    id: 'lavender-bloom',
+    name: 'Lavender Bloom Case',
+    tagline: 'Pressed botanical hydrangea florals encased in crystal clarity.',
+    category: 'Floral',
+    price: 315,
+    originalPrice: 1299,
+    discountPercent: 76,
+    rating: 4.7,
+    reviewCount: 435,
+    images: [lavenderImg, heroImg, flatlayImg],
+    badge: 'NEW',
+    isBestSeller: false,
+    isNewArrival: true,
+    description: 'Bring the serenity of spring blossoms everywhere. Delicate lilac, soft purple, and baby’s breath botanical petals permanently sealed under crystal-clear UV shield resin.',
+    features: [
+      'High-definition archival botanical print that never fades',
+      'Transparent back lets your original phone color shine through',
+      'Anti-drop air-pocket cushioning on all 4 corners',
+      'Ultra-slim 1.2mm silhouette fits all car mounts',
+      'Smudge-proof oleophobic coating'
+    ],
+    materials: 'Crystal Clear Bayer TPU & Scratch-Proof Acrylic',
+    inStock: true,
+  },
+  {
+    id: 'glitter-butterfly',
+    name: 'Glitter Butterfly Sparkle Case',
+    tagline: 'Floating pastel butterfly wings in ethereal star-dusted glitter.',
+    category: 'Glitter & Sparkle',
+    price: 310,
+    originalPrice: 1299,
+    discountPercent: 76,
+    rating: 4.8,
+    reviewCount: 680,
+    images: [heroImg, bowImg, selfieImg],
+    badge: 'TRENDING',
+    isBestSeller: false,
+    isNewArrival: true,
+    description: 'Inspired by romantic dreamy aesthetics. Features floating baby pink butterflies resting atop clouds of subtle iridescent micro-shimmer that catches the light from every angle.',
+    features: [
+      'Starlight glitter effect that moves with dynamic light',
+      'Military-grade drop certified from 8 feet',
+      'Full camera lens coverage with individual cutouts',
+      'Easy snap-on installation with flexible bumper',
+      'Dust-resistant speaker and microphone grilles'
+    ],
+    materials: 'Flexible TPU Bumper with Holographic Shimmer Inlay',
+    inStock: true,
+  },
+  {
+    id: 'soft-pink-elegance',
+    name: 'Soft Pink Elegance Case',
+    tagline: 'Warm cream florals on blush pink luxury protective bumper.',
+    category: 'Luxury',
+    price: 295,
+    originalPrice: 1299,
+    discountPercent: 77,
+    rating: 4.8,
+    reviewCount: 592,
+    images: [mirrorImg, blossomImg, flatlayImg],
+    badge: 'NEW',
+    isBestSeller: false,
+    isNewArrival: true,
+    description: 'Subtle, romantic and unapologetically chic. Features vintage cottagecore floral illustrations with golden stamens printed on a warm cream background framed in blush pink.',
+    features: [
+      'Matte soft-touch velvet feel bumper for superior grip',
+      'Precision MagSafe ring compatibility built right in',
+      'Reinforced camera island with contrast rose gold trim',
+      'Shock absorbing internal lattice structure',
+      'Non-toxic environmental printing technology'
+    ],
+    materials: 'Premium Soft-Touch Hybrid Silicone & Hard PC Backing',
+    inStock: true,
+  },
+  {
+    id: 'minimal-starlight',
+    name: 'Minimal Starlight Case',
+    tagline: 'Sheer transparent case dusted with ultra-fine silver celestial stars.',
+    category: 'Minimal',
+    price: 299,
+    originalPrice: 999,
+    discountPercent: 70,
+    rating: 4.7,
+    reviewCount: 240,
+    images: [heroImg, lavenderImg, selfieImg],
+    isBestSeller: false,
+    isNewArrival: false,
+    description: 'For those who love understated magic. A crystal clear case with microscopic silver celestial starbursts that compliment your device’s original finish without hiding it.',
+    features: [
+      'Subtle minimalist sparkle that looks effortless',
+      '100% optical clarity guaranteed not to yellow for 12 months',
+      'Reinforced corner bumpers for everyday drop protection',
+      'Super light featherweight construction (only 24g)',
+      'Compatible with pop-sockets and phone rings'
+    ],
+    materials: 'Ultra-Clear German Polycarbonate & TPU',
+    inStock: true,
+  }
+];
+
+export const CATEGORIES = [
+  {
+    id: 'Butterfly',
+    name: 'Butterfly',
+    icon: '🦋',
+    tagline: 'Whimsical 3D wings & shimmer',
+    count: '14 Designs',
+    image: heroImg,
+  },
+  {
+    id: 'Floral',
+    name: 'Floral',
+    icon: '🌸',
+    tagline: 'Pressed botanicals & blossoms',
+    count: '18 Designs',
+    image: blossomImg,
+  },
+  {
+    id: 'Glitter & Sparkle',
+    name: 'Glitter & Sparkle',
+    icon: '✨',
+    tagline: 'Holographic starlight shimmer',
+    count: '12 Designs',
+    image: bowImg,
+  },
+  {
+    id: 'Cute & Bow',
+    name: 'Cute & Bow',
+    icon: '🎀',
+    tagline: 'Chic rhinestone pavé bows',
+    count: '9 Designs',
+    image: bowImg,
+  },
+  {
+    id: 'Luxury',
+    name: 'Luxury',
+    icon: '💎',
+    tagline: 'Mirror cases & gold trims',
+    count: '8 Designs',
+    image: mirrorImg,
+  },
+  {
+    id: 'Minimal',
+    name: 'Minimal',
+    icon: '🌙',
+    tagline: 'Clean aesthetic & subtle details',
+    count: '10 Designs',
+    image: lavenderImg,
+  },
+];
+
+export const REVIEWS: Review[] = [
+  {
+    id: 'rev-1',
+    author: 'Ananya Sharma',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80',
+    location: 'Mumbai, Maharashtra',
+    rating: 5,
+    date: '2 days ago',
+    comment: 'Absolutely obsessed with my butterfly case! It looks even prettier in person. The 3D wings have such a cute sparkle in sunlight, and it fits my Samsung Galaxy A37 like a glove!',
+    verifiedPurchase: true,
+    productName: 'Butterfly Dreams Case',
+  },
+  {
+    id: 'rev-2',
+    author: 'Riya Sen',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&q=80',
+    location: 'Bengaluru, Karnataka',
+    rating: 5,
+    date: '1 week ago',
+    comment: 'Super cute and protective. My new favourite phone accessory! I dropped my phone on marble stairs yesterday and there wasn’t a single scratch on the screen or case. Totally in love with the wristlet charm too!',
+    verifiedPurchase: true,
+    productName: 'Pink Blossom Charm Case',
+  },
+  {
+    id: 'rev-3',
+    author: 'Meera Kapoor',
+    avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=160&q=80',
+    location: 'New Delhi, Delhi',
+    rating: 5,
+    date: '3 weeks ago',
+    comment: 'The glitter details are gorgeous. Totally worth it! I get compliments on the crystal bow case wherever I go in college and cafes. Fast 2-day delivery to Delhi as well.',
+    verifiedPurchase: true,
+    productName: 'Crystal Bow Sparkle Case',
+  },
+  {
+    id: 'rev-4',
+    author: 'Tanvi Deshmukh',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80',
+    location: 'Pune, Maharashtra',
+    rating: 5,
+    date: '1 month ago',
+    comment: 'The mirror case is such a lifesaver for quick lipstick checks! The floral border around the mirror is so high quality and doesn’t chip. Already ordered two more as gifts for my besties!',
+    verifiedPurchase: true,
+    productName: 'Mirror Glam Vanity Case',
+  }
+];
+
+export const INSTAGRAM_POSTS = [
+  {
+    id: 'ig-1',
+    image: heroImg,
+    caption: 'Soft sunlight + holographic butterfly wings ✨ #LumiCase',
+    likes: '2.4k',
+  },
+  {
+    id: 'ig-2',
+    image: blossomImg,
+    caption: 'The pearl charm wristlet is an everyday essential 🌸 #PhoneFashion',
+    likes: '1.8k',
+  },
+  {
+    id: 'ig-3',
+    image: selfieImg,
+    caption: 'Mirror checks with the lavender glitter case 💜 #OOTD',
+    likes: '3.1k',
+  },
+  {
+    id: 'ig-4',
+    image: bowImg,
+    caption: 'Bow details that shine bright like diamonds 🎀 #AestheticCase',
+    likes: '1.9k',
+  },
+  {
+    id: 'ig-5',
+    image: mirrorImg,
+    caption: 'Touch-ups on the go with the Floral Mirror case 💎 #VanityVibes',
+    likes: '2.7k',
+  },
+  {
+    id: 'ig-6',
+    image: flatlayImg,
+    caption: 'Pastel peonies, gold rings and our signature case 💕 #LumiCaseFam',
+    likes: '4.2k',
+  },
+];
+
+export const FAQS = [
+  {
+    q: 'Will LumiCase cases protect my phone if it drops?',
+    a: 'Yes, absolutely! Every LumiCase case is engineered with shock-absorbent German Bayer TPU bumpers, reinforced air-cushioned corners, and a 1.5mm raised screen & camera bezel. They survive real-world daily drops up to 10 feet while staying slim and stylish.',
+  },
+  {
+    q: 'Do your clear cases turn yellow over time?',
+    a: 'No. Our clear phone cases are treated with an optical anti-oxidation UV layer that prevents discoloration and yellowing caused by UV light and skin oils for up to 12 months.',
+  },
+  {
+    q: 'How long does shipping take across India?',
+    a: 'We ship all orders via priority express couriers (Bluedart, Delhivery & DTDC). Metro deliveries take 2–3 business days, while non-metro cities take 4–5 business days. Free shipping applies to all orders over ₹499!',
+  },
+  {
+    q: 'What is your 7-Day Easy Return policy?',
+    a: 'If you ordered the wrong phone model or the case doesn’t match your device, you can request an instant replacement or full refund within 7 days of delivery with zero hassle.',
+  },
+  {
+    q: 'Are the phone charms and wristlets detachable?',
+    a: 'Yes! The cases that come with beaded charms (like the Pink Blossom Charm Case) have dedicated reinforced lanyard loop holes so you can detach the charm or switch to another one anytime.',
+  }
+];
